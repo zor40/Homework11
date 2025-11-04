@@ -1,8 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
-import java.time.LocalDate;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Task 1");
@@ -12,7 +7,7 @@ public class Main {
         operatingSystem(0, 2014);
         System.out.println();
         System.out.println("Task 3");
-        delivery(95, 1);
+        delivery(95);
         System.out.println();
     }
 
@@ -38,7 +33,8 @@ public class Main {
         }
     }
 
-    public static void delivery(int deliveryDistance, int deliveryDay) {
+    public static void delivery(int deliveryDistance) {
+        int deliveryDay = 1;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется " + deliveryDay + " день.");
         }
