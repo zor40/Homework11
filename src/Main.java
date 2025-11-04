@@ -40,10 +40,6 @@ public class Main {
         int deliveryDay = 1;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется " + deliveryDay + " день.");
-            if (deliveryDistance > 20 && deliveryDistance <= 60) {
-                deliveryDay += 1;
-                System.out.println("Потребуется " + deliveryDay + " дня.");
-            }
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
             deliveryDay += 1;
             System.out.println("Потребуется " + deliveryDay + " дня.");
